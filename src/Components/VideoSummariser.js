@@ -70,7 +70,7 @@ const VideoSummariser = () => {
 		let formData = new FormData();
 		formData.append("file", videoFile);
 		formData.append("question", question);
-		fetch("http://127.0.0.1:5000/fileupload", {
+		fetch("https://generativeaidev.azurewebsites.net/fileupload", {
 			method: "POST",
 			body: formData,
 		})
